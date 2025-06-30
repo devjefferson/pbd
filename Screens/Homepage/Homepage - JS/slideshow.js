@@ -10,27 +10,27 @@ function updateSliderImages() {
     var html = $('html');
     if ($(window).width() < 660) {
         if (html.hasClass('light')) {
-            $('.slider1').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_1_mobile_white.png");
-            $('.slider2').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_2_mobile_white.png");
-            $('.slider3').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_3_mobile_white.png");
-            $('.slider4').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_4_mobile_white.png");
+            $('.slider1').attr('src', "/images/main_section_two/slideshow-mobile/slide_1_mobile_white.png");
+            $('.slider2').attr('src', "/images/main_section_two/slideshow-mobile/slide_2_mobile_white.png");
+            $('.slider3').attr('src', "/images/main_section_two/slideshow-mobile/slide_3_mobile_white.png");
+            $('.slider4').attr('src', "/images/main_section_two/slideshow-mobile/slide_4_mobile_white.png");
         } else {
-            $('.slider1').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_1_mobile_black.png");
-            $('.slider2').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_2_mobile_black.png");
-            $('.slider3').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_3_mobile_black.png");
-            $('.slider4').attr('src', "/PBD/images/main_section_two/slideshow-mobile/slide_4_mobile_black.png");
+            $('.slider1').attr('src', "/images/main_section_two/slideshow-mobile/slide_1_mobile_black.png");
+            $('.slider2').attr('src', "/images/main_section_two/slideshow-mobile/slide_2_mobile_black.png");
+            $('.slider3').attr('src', "/images/main_section_two/slideshow-mobile/slide_3_mobile_black.png");
+            $('.slider4').attr('src', "/images/main_section_two/slideshow-mobile/slide_4_mobile_black.png");
         }
     } else if ($(window).width() > 660) {
         if (html.hasClass('light')) {
-            $('.slider1').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_1_desktop_white.png");
-            $('.slider2').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_2_desktop_white.png");
-            $('.slider3').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_3_desktop_white.png");
-            $('.slider4').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_4_desktop_white.png");
+            $('.slider1').attr('src', "/images/main_section_two/slideshow-desktop/slide_1_desktop_white.png");
+            $('.slider2').attr('src', "/images/main_section_two/slideshow-desktop/slide_2_desktop_white.png");
+            $('.slider3').attr('src', "/images/main_section_two/slideshow-desktop/slide_3_desktop_white.png");
+            $('.slider4').attr('src', "/images/main_section_two/slideshow-desktop/slide_4_desktop_white.png");
         } else {
-            $('.slider1').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_1_desktop_black.png");
-            $('.slider2').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_2_desktop_black.png");
-            $('.slider3').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_3_desktop_black.png");
-            $('.slider4').attr('src', "/PBD/images/main_section_two/slideshow-desktop/slide_4_desktop_black.png");
+            $('.slider1').attr('src', "/images/main_section_two/slideshow-desktop/slide_1_desktop_black.png");
+            $('.slider2').attr('src', "/images/main_section_two/slideshow-desktop/slide_2_desktop_black.png");
+            $('.slider3').attr('src', "/images/main_section_two/slideshow-desktop/slide_3_desktop_black.png");
+            $('.slider4').attr('src', "/images/main_section_two/slideshow-desktop/slide_4_desktop_black.png");
         }
     }
 }

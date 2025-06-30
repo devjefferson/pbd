@@ -23,10 +23,10 @@
   --blue-gradient-color: linear-gradient(to right, var(--font-color) 20%, rgba(0,212,255,1) 100%);
   --text-blue-gradient-color: linear-gradient(to bottom, var(--font-color) 20%, rgba(0,212,255,1) 100%) border-box;
 
-  --img-section-one: url(/PBD/images/main_section_one/section_one_dark.png);
+  --img-section-one: url(/images/main_section_one/section_one_dark.png);
 
-  --left-arrow-section-two : url(/PBD/images/main_section_two/arrows/white_left_arrow.png);
-  --right-arrow-section-two : url(/PBD/images/main_section_two/arrows/white_right_arrow.png);
+  --left-arrow-section-two : url(/images/main_section_two/arrows/white_left_arrow.png);
+  --right-arrow-section-two : url(/images/main_section_two/arrows/white_right_arrow.png);
 
 
 }
@@ -42,10 +42,10 @@
   --blue-gradient-color: linear-gradient(to right, rgba(0,212,255,1) 35%, var(--font-color) 80%);
   --text-blue-gradient-color: linear-gradient(to bottom, rgba(0,212,255,1) 35%, var(--font-color) 80%) border-box;
 
-  --img-section-one: url(/PBD/images/main_section_one/section_one_white.png);
+  --img-section-one: url(/images/main_section_one/section_one_white.png);
 
-  --left-arrow-section-two : url(/PBD/images/main_section_two/arrows/black_left_arrow.png);
-  --right-arrow-section-two : url(/PBD/images/main_section_two/arrows/black_right_arrow.png);
+  --left-arrow-section-two : url(/images/main_section_two/arrows/black_left_arrow.png);
+  --right-arrow-section-two : url(/images/main_section_two/arrows/black_right_arrow.png);
 
 }
 

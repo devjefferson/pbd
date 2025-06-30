@@ -1,0 +1,184 @@
+/* =======================
+   FORMULÁRIOS > BEGINNING
+========================== */
+
+.container .formCadastro, .container #loginForm {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.container #loginForm {
+  max-width: 500px;
+}
+
+.formCadastro .input_group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.formCadastro h1, #loginForm h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  background: var(--text-blue-gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s;
+}
+
+  /* ========================
+  CONTAINER_INPUT > BEGINNING
+  =========================== */
+
+.formCadastro .container_input, #loginForm .container_input {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.container_input label {
+  font-size: 1.6rem;
+  color: var(--font-color);
+  margin-left: 5px;
+}
+
+.container_input input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  background: rgba(143, 142, 142, 0.3);
+  border-radius: 15px;
+  font-size: 1.6rem;
+  color: var(--font-color);
+  font-weight: 800;
+}
+
+input[readonly] {
+  background: rgba(143, 142, 142, 0.6);
+  cursor: not-allowed;
+}
+
+  /* ==================
+  CONTAINER_INPUT > END
+  ===================== */
+
+
+  /* ================
+  BUTTONS > BEGINNING
+  =================== */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.buttons button, .buttons input {
+  font-size: 22px;
+  padding: 10px;
+  width: 50%;
+  color: var(--font-color);
+  cursor: pointer;
+  border-radius: 15px;
+  background: linear-gradient(var(--back-color), var(--back-color)) padding-box, var(--blue-gradient-color) border-box;
+  border: 1px solid transparent;
+}
+
+  /* ==========
+  BUTTONS > END
+  ============= */
+
+
+  /* ==================================
+  ERROR AND SUCCESS MESSAGE > BEGINNING
+  ===================================== */
+
+#successMessage {
+  display: none;
+  color: rgb(0, 128, 0);
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#errorMessage {
+  color: #8B0000;
+  font-size: 1.5rem;
+}
+
+.spans {
+  color: #8B0000;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+  /* ============================
+  ERROR AND SUCCESS MESSAGE > END
+  =============================== */
+
+
+  /* ===========================================
+  ASK IF YOU ALREADY HAVE AN ACCOUNT > BEGINNING
+  ============================================== */
+
+  #log {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  #log p {
+    color: var(--font-color);;
+    font-size: 1.8rem;
+  }
+  
+  #log a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  #log a:hover {
+    opacity: 60%;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+    /* =====================================
+    ASK IF YOU ALREADY HAVE AN ACCOUNT > END
+    ======================================== */
+
+/* =================
+   FORMULÁRIOS > END
+==================== */
+ 
+ 
+/* =================
+   MEDIA > BEGINNING
+==================== */
+
+@media (max-width: 700px) {
+  .input_group {
+    flex-wrap: wrap;
+  }
+
+  form {
+    margin: 0;
+  }
+}
+
+/* ===========
+   MEDIA > END
+============== */

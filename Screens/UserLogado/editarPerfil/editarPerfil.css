@@ -1,0 +1,159 @@
+/* =======================
+   FORMULÁRIOS > BEGINNING
+========================== */
+
+body {
+  width: 100%;
+}
+
+main {
+  width:100%;
+  padding: 0 2%;
+}
+
+.container:not(header .container) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 5rem;
+  background: var(--text-blue-gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s;
+}
+
+.container_form {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+.container_form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+form .input_group {
+  gap: 8px;
+  width: 100%;
+}
+
+  /* ========================
+  CONTAINER_INPUT > BEGINNING
+  =========================== */
+
+form .container_input {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.container_input label {
+  font-size: 1.6rem;
+  color: var(--font-color);
+  margin-left: 5px;
+}
+
+.container_input input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  background: rgba(143, 142, 142, 0.3);
+  border-radius: 15px;
+  font-size: 1.6rem;
+  color: var(--font-color);
+  font-weight: 800;
+}
+
+  /* ==================
+  CONTAINER_INPUT > END
+  ===================== */
+
+
+  /* ================
+  BUTTONS > BEGINNING
+  =================== */
+
+form button {
+  width: 100%;
+  max-width: 200px;
+  margin: 15px 0;
+  font-size: 22px;
+  padding: 10px;
+  width: 50%;
+  color: var(--font-color);
+  cursor: pointer;
+  border-radius: 15px;
+  background: linear-gradient(var(--back-color), var(--back-color)) padding-box, var(--blue-gradient-color) border-box;
+  border: 1px solid transparent;
+}
+
+form button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.menu-logado a:hover {
+  background: var(--back-color);
+}
+
+.container #validateMessage {
+  color: green;
+  font-size: 2.3rem;
+}
+.container #errorMessage {
+  color: #B70000;
+  font-size: 2.3rem;
+}
+
+.input_group .spans {
+  margin-left: 6px;
+  color: #B70000;
+  font-size: 1.8rem;
+}
+
+  /* ==========
+  BUTTONS > END
+  ============= */
+
+/* =================
+   FORMULÁRIOS > END
+==================== */
+
+
+/* =================
+   MEDIA > BEGINNING
+==================== */
+
+@media (max-width: 900px) {
+  .container_form {
+    flex-wrap: wrap;
+  }
+
+  form {
+    margin: 0;
+  }
+}
+
+/* ===========
+   MEDIA > END
+============== */

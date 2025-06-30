@@ -1,0 +1,118 @@
+/* =======================
+   FORMULÁRIOS > BEGINNING
+========================== */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 700px;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.teste {
+  width: 100%;
+  display: flex;
+}
+
+form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  background: var(--text-blue-gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s;
+}
+
+  /* ========================
+  CONTAINER_INPUT > BEGINNING
+  =========================== */
+
+form .container_input {
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
+  text-align: left;
+  width: 95%;
+}
+
+.container_input label {
+  font-size: 1.6rem;
+  color: var(--font-color);
+  margin: 0 0 5px 5px;
+}
+
+.container_input input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: rgba(143, 142, 142, 0.3);
+  border-radius: 15px;
+  font-size: 1.6rem;
+  color: var(--font-color);
+  font-weight: 800;
+}
+
+input[readonly] {
+  background: rgba(143, 142, 142, 0.6);
+  cursor: not-allowed;
+}
+
+.nav-menu a {
+  padding: 6px 14px;
+  background: linear-gradient(var(--back-color), var(--back-color)) padding-box, var(--blue-gradient-color) border-box;
+  border: 1px solid transparent;
+  color: var(--font-color);
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 4rem;
+  transition: background-color 0.3s;
+}
+
+  /* ==================
+  CONTAINER_INPUT > END
+  ===================== */
+
+
+  /* ================
+  BUTTONS > BEGINNING
+  =================== */
+
+button {
+  font-size: 22px;
+  margin: 15px 0;
+  padding: 10px;
+  width: 95%;
+  color: var(--font-color);
+  cursor: pointer;
+  border-radius: 15px;
+  background: linear-gradient(var(--back-color), var(--back-color)) padding-box, var(--blue-gradient-color) border-box;
+  border: 1px solid transparent;
+}
+
+  /* ==========
+  BUTTONS > END
+  ============= */
+
+/* =================
+   FORMULÁRIOS > END
+==================== */
+ 

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Configurações globais de fonte e box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+}
+
+:root {
+    --back-color: rgb(24, 24, 24);
+    --header-color: rgb(17, 17, 17);
+    --font-color: rgb(219, 219, 219);
+    --container-border: rgba(0, 0, 0, 0.3);
+    --btn-color: rgba(0, 212, 255, 1);
+    --btn-hover: rgba(0, 150, 200, 1);
+    --success-color: #d4edda;
+    --error-color: #f8d7da;
+    --success-border: #c3e6cb;
+    --error-border: #f5c6cb;
+}
+
+/* Configurações gerais para o corpo */
+
+/* Container principal */
+.container:not(header .container) {
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos */
+h2 {
+    color: var(--font-color);
+    margin: 20px auto;
+    font-size: 4.3rem;
+    font-weight: 700;
+    background: var(--text-blue-gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s;
+}
+
+.tabela-container {
+    height: 100%;
+    max-height: 200px;
+    width: 100%;
+    max-width: 1280px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid var(--container-border);
+}
+
+th, td {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--back-color);
+    color: var(--font-color);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(219, 219, 219, 0.1);
+}
+
+tr:hover {
+    background-color: rgba(219, 219, 219, 0.2);
+}
+
+/* Mensagens de feedback */
+.feedback-msg {
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.success-msg {
+    font-size: 2rem;
+    background-color: var(--success-color);
+    color: #155724;
+    border: 1px solid var(--success-border);
+}
+
+.error-msg {
+    font-size: 2rem;
+    background-color: var(--error-color);
+    color: #721c24;
+    border: 1px solid var(--error-border);
+}
+
+.spans {
+    font-size: 2rem;
+    text-align: left;
+    color:#7B0000
+}
+
+/* Estilos para seções de formulário */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 98%;
+    align-items: center;
+    
+}
+
+.form-section .input_group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container_input {
+    width: 100%;
+    max-width: 500px;
+}
+
+.container_input input, .container_input select {
+    width: 100%;
+    padding: 12px;
+    font-size: 2rem;
+    border: 1px solid var(--container-border);
+    border-radius: 5px;
+    background-color: var(--header-color);
+    color: rgba(219, 219, 219, 0.7); /* Mesma cor usada para os outros placeholders */
+    opacity: 1; /* Garante que o placeholder não fique esmaecido */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--btn-color);
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+}
+
+/* Botões */
+
+.buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+
+.button {
+    padding: 12px 24px;
+    background: linear-gradient(var(--back-color), var(--back-color)) padding-box, var(--blue-gradient-color) border-box;
+    border: 1px solid transparent;
+    color: var(--font-color);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.button:hover {
+    opacity: 80%;
+}
+
+#rua, #bairro, #cidade, #estado {
+    background: var(var(--header-color));
+    cursor: not-allowed;
+}
+
+button img {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.menu-logado a:hover {
+    background: var(--back-color);
+  }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0
+    }
+
+    .button {
+        width: 98%;
+    }
+}
